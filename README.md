@@ -3,7 +3,7 @@ Static site/blog/(maybe doc generator) in Nim
 
 ## Things TODO
 
-- [ ] Create CLI app with Docopt.
+- [X] Create CLI app with Docopt.
 - [ ] Create sitegen file structure.
 - [ ] Create theme file structure.
 - [ ] Rendering metadata and html creation (markdown, rst)
