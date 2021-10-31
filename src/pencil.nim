@@ -3,9 +3,10 @@ import std/strformat
 
 # DEPENDENCIES IMPORTS
 import docopt
+import rainbow
 
 # INTERNAL IMPORTS
-
+import pencil/sitegen
 
 const 
   VERSION* = "0.1.0"
@@ -32,16 +33,16 @@ Options:
 Available Commands:
   site             Generates a new site/project.
 
-"""
+""".rfLightGoldenrod1
 
 when isMainModule:
   
   # Parsing doc for commands 
-  let args = docopt(doc, version = versionString)
+  let args = docopt(doc, version = versionString.rfLime)
   
-  # Generate new site 
+  # Generate new site command
   if args["site"]: 
-    echo "Site created!"
+    discard newSite($args["<site>"])
 
   
 
