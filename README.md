@@ -14,11 +14,11 @@ Pencil is not usable at the moment.
 
 ## ✨ Features
 - CLI app using `pencil`
-
+- Create new site with `pencil site <sitename>`
 
 ## 💭 Planned
-- Create new site with `pencil new <site>`
-- Create new theme with `pencil new theme`
+
+- Create new theme with `pencil theme <themename>`
 - Rendering metadata and create html files based on markdown files with `pencil build`
 - Use TOML file for configuration
 - Using Moustache Templates

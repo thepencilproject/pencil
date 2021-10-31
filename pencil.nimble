@@ -12,3 +12,5 @@ bin           = @["pencil"]
 
 requires "nim >= 1.4.6"
 requires "docopt >= 0.6.7"
+requires "parsetoml >= 0.6.0"
+requires "rainbow >= 0.2.2"
