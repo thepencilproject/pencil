@@ -1,22 +1,39 @@
-# pencil
-Static site/blog/(maybe doc generator) in Nim
+# ✏️ Pencil
 
-## Things TODO
+**pencil is under heavy work in progress** 🚧
 
-- [X] Create CLI app with Docopt.
-- [ ] Create sitegen file structure.
-- [ ] Create theme file structure.
-- [ ] Rendering metadata and html creation (markdown, rst)
-- [ ] Use TOML for configuration files
-- [ ] Templates (Options:Moustache)
-- [ ] Themes ( Design methods of add themes and install it. Set it from the configuration file)
-- [ ] Auto deployments to Netlify, GH Pages and all major free static hosting providers
-- [ ] Analytics ( Google analytics and free alternatives)
-- [ ] Disqus comments and alternatives ( Activate via config file)
-- [ ] Pagination and sorting per year or per tag. 
-- [ ] Builds
-- [ ] Default theme
-- [ ] Create themes
-- [ ] Write a tutorial and documentation
-- [ ] Create a site
-- [ ] Add it to nimble
+
+## 📌 Overview
+Pencil is a static site/blog/(maybe doc) generator for nim  👑
+
+
+## ⛔ Usage
+
+Pencil is not usable at the moment.
+
+
+## ✨ Features
+- CLI app using `pencil`
+
+
+## 💭 Planned
+- Create new site with `pencil new <site>`
+- Create new theme with `pencil new theme`
+- Rendering metadata and create html files based on markdown files with `pencil build`
+- Use TOML file for configuration
+- Using Moustache Templates
+- Pagination
+- Filtering per year or per tag
+- Deployments with `pencil deploy <host>`
+- Comments (Disqus, utterances etc).
+- Analytics (Google and alternatives).
+- RSS 
+- Sitemap
+- Minimal default theme
+- Create themes
+- Write Usage section
+- Write Documentation
+- Make it a nimble package
+
+## 📄 License
+MIT License. See [here](https://github.com/thepencilproject/pencil/blob/main/LICENSE).
