@@ -17,6 +17,7 @@ type SiteStruct* = ref object
   postsDir*: string       
   configSite*: string     
   themesDir*: string
+  themeDefault*: string
   
 
 # CONSTS FOR DIRECTORIES NAMES
@@ -25,7 +26,8 @@ const
   contentDirName = "content"       
   pagesDirName = "pages"          
   postsDirName = "posts"           
-  themesDirName = "themes"         
+  themesDirName = "themes"
+  themeDefaultName = "default"         
 
 # New site generator proc
 proc newSite*(site : string): SiteStruct  =
@@ -73,13 +75,12 @@ proc newSite*(site : string): SiteStruct  =
 
     result.themesDir = joinpath(siteDir, themesDirName)
     
-    # TODO Add here default theme
-
     block createThemesDir:
       if not dirExists(result.themesDir):
         createDir(result.themesDir)
       echo fmt"   |-- themes/".rfLime
-
+    
+    
 
     writeFile(siteDir / "config.toml", " ")
     echo fmt"   |-- config.toml".rfLime

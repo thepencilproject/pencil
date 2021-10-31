@@ -15,13 +15,12 @@ Pencil is not usable at the moment.
 ## ✨ Features
 - CLI app using `pencil`
 - Create new site with `pencil site <sitename>`
+- Create new theme with `pencil theme <themename>`
 
 ## 💭 Planned
-
-- Create new theme with `pencil theme <themename>`
 - Rendering metadata and create html files based on markdown files with `pencil build`
 - Use TOML file for configuration
-- Using Moustache Templates
+- Using Moustache Templates (or nimja)
 - Pagination
 - Filtering per year or per tag
 - Deployments with `pencil deploy <host>`
