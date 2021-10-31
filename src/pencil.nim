@@ -7,6 +7,7 @@ import rainbow
 
 # INTERNAL IMPORTS
 import pencil/sitegen
+import pencil/themegen
 
 const 
   VERSION* = "0.1.0"
@@ -23,6 +24,7 @@ Nim Version:   {NimVersion}
 
 Usage:
   pencil site <site>
+  pencil theme <theme>
   pencil (-h | --help)
   pencil (-v | --version)
 
@@ -32,6 +34,7 @@ Options:
 
 Available Commands:
   site             Generates a new site/project.
+  theme            Generates a new theme.
 
 """.rfLightGoldenrod1
 
@@ -43,6 +46,10 @@ when isMainModule:
   # Generate new site command
   if args["site"]: 
     discard newSite($args["<site>"])
+
+  # Generate an empty theme s
+  elif args["theme"]:
+    discard newTheme($args["<theme>"])
 
   
 
